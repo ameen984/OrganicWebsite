@@ -3,7 +3,8 @@
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Optional glow */
 }
 .firstpage{
-     background: url('../images/banner-1.jpg');
+     /* background: url('../images/banner-1.jpg'); */
+     background-image: url('images/banner-1.jpg');
     background-size: cover;
     height: auto;
    
@@ -34,7 +35,8 @@
  visibility: visible !important;
 }
  .left{
-    background: url('../images/banner-ad-1.jpg');
+    /* background: url('../images/banner-ad-1.jpg'); */
+    background-image: url('images/banner-ad-1.jpg');
     background-size: cover;
    
    
@@ -42,17 +44,23 @@
 } 
 
 .mainr{
-    background: url('../images/banner-ad-3.jpg');
+    /* background: url('../images/banner-ad-3.jpg'); */
+    background-image: url('images/banner-ad-3.jpg');
+
     background-size: cover;
    
 }
 .mainl{
-  background: url('../images/banner-ad-2.jpg');
+  /* background: url('../images/banner-ad-2.jpg'); */
+    background-image: url('images/banner-ad-2.jpg');
+
     background-size: cover;
 }
 
 .mainrow1{
-background: url('../images/banner-newsletter.jpg');
+/* background: url('../images/banner-newsletter.jpg'); */
+    background-image: url('images/banner-newsletter.jpg');
+
     background-size: cover;
 }
 .lastlogo:hover{
