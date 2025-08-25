@@ -1,0 +1,64 @@
+.dropdown-toggle.show {
+  border-color: #0d6efd; /* Bootstrap primary color */
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Optional glow */
+}
+.firstpage{
+     background: url('../images/banner-1.jpg');
+    background-size: cover;
+    height: auto;
+   
+    
+}
+#buttonpage2:hover{
+   
+  background-color: rgb(219, 117, 22) !important;
+
+
+}
+.heart:hover{
+  background-color: black !important;
+  color: white;
+
+}
+.cart:hover{
+    background-color: rgb(219, 117, 22) !important;
+
+}
+#productbackground:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex !important;
+
+  
+}
+#productbackground:hover #productcart {
+ visibility: visible !important;
+}
+ .left{
+    background: url('../images/banner-ad-1.jpg');
+    background-size: cover;
+   
+   
+
+} 
+
+.mainr{
+    background: url('../images/banner-ad-3.jpg');
+    background-size: cover;
+   
+}
+.mainl{
+  background: url('../images/banner-ad-2.jpg');
+    background-size: cover;
+}
+
+.mainrow1{
+background: url('../images/banner-newsletter.jpg');
+    background-size: cover;
+}
+.lastlogo:hover{
+  background-color: darkgrey;
+
+}
+.search{
+  background-color: rgb(245, 245, 245) !important;
+}

@@ -1,0 +1,4307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+      integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row py-2 mb-1 mx-auto">
+        <div
+          class="d-flex justify-content-center col-sm-12 col-lg-2 py-2 ms-lg-4 ms-xl-0"
+        >
+          <div class="d-flex align-items-center me-4">
+            <a href="#" class="navbar-brand">
+              <img src="images/logo.svg" alt="Logo" />
+            </a>
+            <button
+              class="navbar-toggler mx-3"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navmenu"
+            >
+              <i class="fa-solid fa-bars fs-3"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-lg-6 ms-md-auto ms-xl-0 col-xl-4 mx-xl-5 search d-flex rounded-4 align-items-center"
+        >
+          <div class="dropdown px-2">
+            <a
+              class="btn dropdown-toggle fw-light border-0 px-4 d-md-flex align-items-center d-none"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              All Categories
+            </a>
+            <ul class="dropdown-menu rounded-0">
+              <li><a class="dropdown-item" href="#">All Categories</a></li>
+              <li><a class="dropdown-item" href="#">Groceries</a></li>
+              <li><a class="dropdown-item" href="#">Drinks</a></li>
+              <li><a class="dropdown-item" href="#">Chocolates</a></li>
+            </ul>
+          </div>
+          <input
+            class="form-control border-0 py-2"
+            style="background-color: rgb(245, 245, 245)"
+            type="text"
+            placeholder="Search for more than 20,000 products"
+          />
+          <i
+            class="ps-lg-2 ms-lg-3 pe-lg-5 bi bi-search fs-4 text-secondary"
+          ></i>
+        </div>
+        <div
+          class="col-md-6 col-xl-4 justify-content-center justify-content-md-start label d-flex align-items-center"
+        >
+          <a href="#" class="btn btn-lg pb-2 fw-bold fs-5">HOME</a>
+          <div class="dropdown ms-2">
+            <button
+              class="btn dropdown-toggle fw-bold fs-5"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              PAGES
+            </button>
+            <ul class="dropdown-menu text-secondary p-3">
+              <li><a class="dropdown-item mb-2 " href="#">ABOUT US</a></li>
+              <li><a class="dropdown-item  mb-2" href="#">SHOP</a></li>
+              <li><a class="dropdown-item  mb-2" href="#">SINGLE PRODUCT</a></li>
+              <li><a class="dropdown-item mb-2 " href="#">CART</a></li>
+              <li><a class="dropdown-item  mb-2" href="#">CHECKOUT</a></li>
+              <li><a class="dropdown-item mb-2 " href="#">BLOG</a></li>
+              <li><a class="dropdown-item mb-2 " href="#">SINGLE POST</a></li>
+              <li><a class="dropdown-item  mb-2" href="#">STYLES</a></li>
+              <li><a class="dropdown-item mb-2 " href="#">CONTACT</a></li>
+              <li><a class="dropdown-item mb-2 " href="#">THANK YOU</a></li>
+              <li><a class="dropdown-item mb-2 " href="#">MY ACCOUNT</a></li>
+              <li><a class="dropdown-item mb-2 " href="#">404 ERROR</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col d-flex align-items-center justify-content-center justify-content-md-end me-md-4"
+        >
+          <div class="fs-4">
+            <i class="bi bi-person-circle me-4"></i>
+            <i class="bi bi-bookmark-heart"></i>
+            <button
+              class="navbar-toggler mx-3"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navmenuright"
+            >
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-start text-bg-light"
+      tabindex="-1"
+      id="navmenu"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fs-3 fw-light">MENU</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-apple-whole me-3"></i>Fruits and
+              Vegetables</a
+            >
+          </li>
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-egg me-3"></i>Dairy and Egg</a
+            >
+          </li>
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-drumstick-bite me-3"></i>Meat and
+              Poultry</a
+            >
+          </li>
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-fish me-3"></i>Seafood</a
+            >
+          </li>
+
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-bread-slice me-3"></i>Bakery and Bread</a
+            >
+          </li>
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-bowl-food me-3"></i>Canned Goods</a
+            >
+          </li>
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-ice-cream me-3"></i>Frozen foods</a
+            >
+          </li>
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-bowl-rice me-3"></i>Pasta and Rice</a
+            >
+          </li>
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-mug-saucer me-3"></i>Breakfast Foods</a
+            >
+          </li>
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-cookie-bite me-3"></i>Snacks and chips</a
+            >
+          </li>
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a
+              class="nav-link text-dark d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse"
+              href="#beveragesMenu"
+              role="button"
+              aria-expanded="false"
+              aria-controls="beveragesMenu"
+            >
+              <span><i class="fa-solid fa-mug-hot me-3"></i>Beverages</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="collapse list-unstyled ps-4" id="beveragesMenu">
+              <li><a class="nav-link text-dark py-2" href="#">Water</a></li>
+              <li><a class="nav-link text-dark py-2" href="#">Juice</a></li>
+              <li><a class="nav-link text-dark py-2" href="#">Soda</a></li>
+              <li><a class="nav-link text-dark py-2" href="#">Tea</a></li>
+            </ul>
+          </li>
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-pepper-hot me-3"></i>Spices and Seasoning</a
+            >
+          </li>
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-baby me-3"></i>Baby Fodd and Formula</a
+            >
+          </li>
+           <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-star-of-life me-3"></i>Health and Wellness</a
+            >
+          </li>
+           <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-house me-3"></i>household Supplies</a
+            >
+          </li>
+           <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-person me-3"></i>Personal Care</a
+            >
+          </li>
+           <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <a href="#" class="nav-link text-dark"
+              ><i class="fa-solid fa-paw me-3"></i>Pet Food and Supplies</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div
+      class="offcanvas offcanvas-end text-bg-light"
+      tabindex="-1"
+      id="navmenuright"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close mx-auto"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div
+        class="offcanvas-title fs-3 fw-light d-flex justify-content-between mx-3 align-items-end"
+      >
+        <h5 class="fs-3 fw-semibold" style="color: rgb(90, 175, 19)">
+          Your cart
+        </h5>
+        <h5
+          class="rounded-5 px-3 py-2 text-white"
+          style="background-color: rgb(90, 175, 19)"
+        >
+          3
+        </h5>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-8">
+                <div class="lh-sm gy-0">
+                  <h4 class="fs-5 mb-1">Grower cider</h4>
+                  <p class="fs-6 text-secondary">Brief description</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <h4 class="fs-5 fw-light text-secondary">$12</h4>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-8">
+                <div class="lh-sm gy-0">
+                  <h4 class="fs-5 mb-1">Fresh grapes</h4>
+                  <p class="fs-6 text-secondary">Brief description</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <h4 class="fs-5 fw-light text-secondary">$8</h4>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item p-3 pb-0 border border-0 border-bottom">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-8">
+                <div class="lh-sm gy-0">
+                  <h4 class="fs-5 mb-1">Heinz tomato ketchup</h4>
+                  <p class="fs-6 text-secondary">Brief description</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <h4 class="fs-5 fw-light text-secondary">$5</h4>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item p-3 pb-0">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-8">
+                <div class="lh-sm gy-0">
+                  <h4 class="fs-5 fw-light text-secondary mb-1">Total(USD)</h4>
+                </div>
+              </div>
+              <div class="col-2">
+                <h4 class="fs-5 fw-light text-secondary">$25</h4>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center mt-3">
+          <button
+            type="button"
+            class="btn btn-lg w-100 text-white"
+            style="background-color: rgb(90, 175, 19)"
+          >
+            Continue to checkout
+          </button>
+        </div>
+      </div>
+    </div>
+    <section class="firstpage d-flex">
+      <div class="container-fluid d-flex flex-column mt-4">
+        <h2 class="mt-5 pt-5 display-2 fw-medium">
+          <span class="text-success fw-bold"> Organic</span> Foods at your
+        </h2>
+        <h3 class="fw-bolder display-2">Doorsteps</h3>
+        <h5 class="fs-3 text-secondary">Dignissm massa diam elementum</h5>
+        <div class="page1button d-flex mt-4">
+          <div class="but1 me-3 mb-4">
+            <button
+              type="button"
+              class="btn btn-lg btn-success py-3 fs-6 rounded-5"
+            >
+              START SHOPPING
+            </button>
+          </div>
+          <div class="but2">
+            <button
+              type="button"
+              class="btn btn-lg btn-dark py-3 fs-6 rounded-5"
+            >
+              JOIN NOW
+            </button>
+          </div>
+        </div>
+        <div class="container-fluid d-flex mx-0 mt-4 mb-2">
+          <div class="row">
+            <div class="col-md-4 d-flex align-items-center">
+              <h3 class="me-3 fs-1">14k+</h3>
+              <h5 class="w-50 fw-fw-semibold">PRODUCT VARIETIES</h5>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+              <h3 class="ms-md-5 ms-lg-0 me-3 fs-1">50k+</h3>
+              <h5 class="w-50 fw-semibold">HAPPY CUSTOMERS</h5>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+              <h3 class="ms-md-5 ms-lg-0 ps-lg-0 ps-md-5 me-3 fs-1">10+</h3>
+              <h5 class="w-50 fw-semibold mx-3 mx-lg-0 ms-md-0">
+                STORE LOCATIONS
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row mt-4 text-light">
+            <div
+              class="col-md-4 d-flex flex-row align-items-start justify-content-around py-5"
+              style="background-color: rgb(122, 199, 94)"
+            >
+              <i class="bi bi-arrow-repeat display-3"></i>
+              <div class="page1feature">
+                <h3>Fresh from farm</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div>
+            <div
+              class="col-md-4 d-flex flex-row align-items-start justify-content-around py-5"
+              style="background-color: rgb(53, 78, 59)"
+            >
+              <i class="bi bi-leaf display-3"></i>
+              <div class="page1feature">
+                <h3>Fresh from farm</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div>
+            <div
+              class="col-md-4 d-flex flex-row align-items-start justify-content-around py-5"
+              style="background-color: rgb(235, 88, 30)"
+            >
+              <i class="bi bi-truck display-3"></i>
+              <div class="page1feature">
+                <h3>Fresh from farm</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="secondpage">
+      <div class="container-fluid overflow-hidden">
+        <div class="row mb-5 mt-5">
+          <div class="col d-flex justify-content-between">
+            <h2>Category</h2>
+
+            <div class="page2button d-flex align-items-center">
+              <button
+                type="button"
+                id="buttonpage2"
+                class="btn btn-primary me-3 ms-2"
+                style="background-color: rgb(90, 175, 19)"
+              >
+                View all
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-secondary me-2"
+                class="carousel-control-prev"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+                data-bs-target="carouselExample"
+              >
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-secondary"
+                class="carousel-control-prev"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+                data-bs-target="carouselExample"
+              >
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner d-flex mb-4">
+            <div class="carousel-item active">
+              <div class="row text-center pt-3">
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-5.jpg"
+                      alt=""
+                    />
+                    <h5>Meat products</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-1.jpg"
+                      alt=""
+                    />
+                    <h5>Fruit & Veges</h5>
+                  </a>
+                </div>
+
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-2.jpg"
+                      alt=""
+                    />
+                    <h5>Breads & Sweets</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-3.jpg"
+                      alt=""
+                    />
+                    <h5>Fruits & Veges</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-4.jpg"
+                      alt=""
+                    />
+                    <h5>Beverages</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-5.jpg"
+                      alt=""
+                    />
+                    <h5>Meat Products</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-6.jpg"
+                      alt=""
+                    />
+                    <h5>Veges</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-7.jpg"
+                      alt=""
+                    />
+                    <h5>Eggs</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row text-center pt-3">
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-8.jpg"
+                      alt=""
+                    />
+                    <h5>Breads</h5>
+                  </a>
+                </div>
+
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-1.jpg"
+                      alt=""
+                    />
+                    <h5>Fruits</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-2.jpg"
+                      alt=""
+                    />
+                    <h5>Sweets</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-4.jpg"
+                      alt=""
+                    />
+                    <h5>Beverages</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-3.jpg"
+                      alt=""
+                    />
+                    <h5>Wine</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-6.jpg"
+                      alt=""
+                    />
+                    <h5>Veges</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-7.jpg"
+                      alt=""
+                    />
+                    <h5>Eggs</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row text-center pt-3">
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-8.jpg"
+                      alt=""
+                    />
+                    <h5>breads</h5>
+                  </a>
+                </div>
+
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-1.jpg"
+                      alt=""
+                    />
+                    <h5>apples</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-2.jpg"
+                      alt=""
+                    />
+                    <h5>Sweets</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-5.jpg"
+                      alt=""
+                    />
+                    <h5>Meat Products</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-1.jpg"
+                      alt=""
+                    />
+                    <h5>Meat Products</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-4.jpg"
+                      alt=""
+                    />
+                    <h5>Drinks</h5>
+                  </a>
+                </div>
+                <div
+                  class="col d-flex align-items-center justify-content-center"
+                >
+                  <a href="" class="text-decoration-none text-black">
+                    <img
+                      class="rounded-circle"
+                      src="images/category-thumb-1.jpg"
+                      alt=""
+                    />
+                    <h5>Meat Products</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div
+          class="page2head d-flex justify-content-between align-items-center"
+        >
+          <h2>Best selling products</h2>
+          <div class="">
+            <button
+              type="button"
+              id="buttonpage2"
+              class="btn btn-primary"
+              style="background-color: rgb(90, 175, 19)"
+            >
+              View all
+            </button>
+          </div>
+        </div>
+        <div class="row mx-auto justify-content-between">
+          <div
+            id="productbackground"
+            class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+          >
+            <div class="img">
+              <img src="images/product-thumb-1.png" alt="" />
+            </div>
+            <h3 class="fs-5 fw-semibold mt-3">Whole Wheat Sandwich Bread</h3>
+            <div class="logo d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half text-warning"></i>
+              <span class="fs-5 fw-light pb-1">(222)</span>
+            </div>
+            <div
+              class="rupees d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="text-decoration-line-through text-decoration-line-through text-"
+              >
+                $24.00</span
+              >
+              <span class="fw-bold mx-2">$18.00</span>
+              <div class="border text-muted">10% OFF</div>
+            </div>
+            <div id="productcart" class="row mx-auto mt-3 invisible">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    value="0"
+                    min="0"
+                  />
+                </div>
+              </div>
+              <div
+                class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="bi bi-cart3"></i> <span>Add to cart</span>
+              </div>
+              <div
+                class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            id="productbackground"
+            class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+          >
+            <div class="img">
+              <img src="images/product-thumb-2.png" alt="" />
+            </div>
+            <h3 class="fs-5 fw-semibold mt-3">Whole Wheat Sandwich Bread</h3>
+            <div class="logo d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half text-warning"></i>
+              <span class="fs-5 fw-light pb-1">(222)</span>
+            </div>
+            <div
+              class="rupees d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="text-decoration-line-through text-decoration-line-through text-"
+              >
+                $24.00</span
+              >
+              <span class="fw-bold mx-2">$18.00</span>
+              <div class="border text-muted">10% OFF</div>
+            </div>
+            <div id="productcart" class="row mx-auto mt-3 invisible">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    value="0"
+                    min="0"
+                  />
+                </div>
+              </div>
+              <div
+                class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="bi bi-cart3"></i> <span>Add to cart</span>
+              </div>
+              <div
+                class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            id="productbackground"
+            class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+          >
+            <div class="img">
+              <img src="images/product-thumb-3.png" alt="" />
+            </div>
+            <h3 class="fs-5 fw-semibold mt-3">Whole Wheat Sandwich Bread</h3>
+            <div class="logo d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half text-warning"></i>
+              <span class="fs-5 fw-light pb-1">(222)</span>
+            </div>
+            <div
+              class="rupees d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="text-decoration-line-through text-decoration-line-through text-"
+              >
+                $24.00</span
+              >
+              <span class="fw-bold mx-2">$18.00</span>
+              <div class="border text-muted">10% OFF</div>
+            </div>
+            <div id="productcart" class="row mx-auto mt-3 invisible">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    value="0"
+                    min="0"
+                  />
+                </div>
+              </div>
+              <div
+                class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="bi bi-cart3"></i> <span>Add to cart</span>
+              </div>
+              <div
+                class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            id="productbackground"
+            class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+          >
+            <div class="img">
+              <img src="images/product-thumb-4.png" alt="" />
+            </div>
+            <h3 class="fs-5 fw-semibold mt-3">Whole Wheat Sandwich Bread</h3>
+            <div class="logo d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half text-warning"></i>
+              <span class="fs-5 fw-light pb-1">(222)</span>
+            </div>
+            <div
+              class="rupees d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="text-decoration-line-through text-decoration-line-through text-"
+              >
+                $24.00</span
+              >
+              <span class="fw-bold mx-2">$18.00</span>
+              <div class="border text-muted">10% OFF</div>
+            </div>
+            <div id="productcart" class="row mx-auto mt-3 invisible">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    value="0"
+                    min="0"
+                  />
+                </div>
+              </div>
+              <div
+                class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="bi bi-cart3"></i> <span>Add to cart</span>
+              </div>
+              <div
+                class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            id="productbackground"
+            class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+          >
+            <div class="img">
+              <img src="images/product-thumb-5.png" alt="" />
+            </div>
+            <h3 class="fs-5 fw-semibold mt-3">Whole Wheat Sandwich Bread</h3>
+            <div class="logo d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half text-warning"></i>
+              <span class="fs-5 fw-light pb-1">(222)</span>
+            </div>
+            <div
+              class="rupees d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="text-decoration-line-through text-decoration-line-through text-"
+              >
+                $24.00</span
+              >
+              <span class="fw-bold mx-2">$18.00</span>
+              <div class="border text-muted">10% OFF</div>
+            </div>
+            <div id="productcart" class="row mx-auto mt-3 invisible">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    value="0"
+                    min="0"
+                  />
+                </div>
+              </div>
+              <div
+                class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="bi bi-cart3"></i> <span>Add to cart</span>
+              </div>
+              <div
+                class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            id="productbackground"
+            class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+          >
+            <div class="img">
+              <img src="images/product-thumb-6.png" alt="" />
+            </div>
+            <h3 class="fs-5 fw-semibold mt-3">Whole Wheat Sandwich Bread</h3>
+            <div class="logo d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half text-warning"></i>
+              <span class="fs-5 fw-light pb-1">(222)</span>
+            </div>
+            <div
+              class="rupees d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="text-decoration-line-through text-decoration-line-through text-"
+              >
+                $24.00</span
+              >
+              <span class="fw-bold mx-2">$18.00</span>
+              <div class="border text-muted">10% OFF</div>
+            </div>
+            <div id="productcart" class="row mx-auto mt-3 invisible">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    value="0"
+                    min="0"
+                  />
+                </div>
+              </div>
+              <div
+                class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="bi bi-cart3"></i> <span>Add to cart</span>
+              </div>
+              <div
+                class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            id="productbackground"
+            class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+          >
+            <div class="img">
+              <img src="images/product-thumb-7.png" alt="" />
+            </div>
+            <h3 class="fs-5 fw-semibold mt-3">Whole Wheat Sandwich Bread</h3>
+            <div class="logo d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half text-warning"></i>
+              <span class="fs-5 fw-light pb-1">(222)</span>
+            </div>
+            <div
+              class="rupees d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="text-decoration-line-through text-decoration-line-through text-"
+              >
+                $24.00</span
+              >
+              <span class="fw-bold mx-2">$18.00</span>
+              <div class="border text-muted">10% OFF</div>
+            </div>
+            <div id="productcart" class="row mx-auto mt-3 invisible">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    value="0"
+                    min="0"
+                  />
+                </div>
+              </div>
+              <div
+                class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="bi bi-cart3"></i> <span>Add to cart</span>
+              </div>
+              <div
+                class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            id="productbackground"
+            class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+          >
+            <div class="img">
+              <img src="images/product-thumb-8.png" alt="" />
+            </div>
+            <h3 class="fs-5 fw-semibold mt-3">Whole Wheat Sandwich Bread</h3>
+            <div class="logo d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half text-warning"></i>
+              <span class="fs-5 fw-light pb-1">(222)</span>
+            </div>
+            <div
+              class="rupees d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="text-decoration-line-through text-decoration-line-through text-"
+              >
+                $24.00</span
+              >
+              <span class="fw-bold mx-2">$18.00</span>
+              <div class="border text-muted">10% OFF</div>
+            </div>
+            <div id="productcart" class="row mx-auto mt-3 invisible">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    value="0"
+                    min="0"
+                  />
+                </div>
+              </div>
+              <div
+                class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="bi bi-cart3"></i> <span>Add to cart</span>
+              </div>
+              <div
+                class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            id="productbackground"
+            class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+          >
+            <div class="img">
+              <img src="images/product-thumb-9.png" alt="" />
+            </div>
+            <h3 class="fs-5 fw-semibold mt-3">Whole Wheat Sandwich Bread</h3>
+            <div class="logo d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half text-warning"></i>
+              <span class="fs-5 fw-light pb-1">(222)</span>
+            </div>
+            <div
+              class="rupees d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="text-decoration-line-through text-decoration-line-through text-"
+              >
+                $24.00</span
+              >
+              <span class="fw-bold mx-2">$18.00</span>
+              <div class="border text-muted">10% OFF</div>
+            </div>
+            <div id="productcart" class="row mx-auto mt-3 invisible">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    value="0"
+                    min="0"
+                  />
+                </div>
+              </div>
+              <div
+                class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="bi bi-cart3"></i> <span>Add to cart</span>
+              </div>
+              <div
+                class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            id="productbackground"
+            class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+          >
+            <div class="img">
+              <img src="images/product-thumb-10.png " alt="" />
+            </div>
+            <h3 class="fs-5 fw-semibold mt-3">Whole Wheat Sandwich Bread</h3>
+            <div class="logo d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star-half text-warning"></i>
+              <span class="fs-5 fw-light pb-1">(222)</span>
+            </div>
+            <div
+              class="rupees d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="text-decoration-line-through text-decoration-line-through text-"
+              >
+                $24.00</span
+              >
+              <span class="fw-bold mx-2">$18.00</span>
+              <div class="border text-muted">10% OFF</div>
+            </div>
+            <div id="productcart" class="row mx-auto mt-3 invisible">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    value="0"
+                    min="0"
+                  />
+                </div>
+              </div>
+              <div
+                class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="bi bi-cart3"></i> <span>Add to cart</span>
+              </div>
+              <div
+                class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row mainrow gy-3">
+            <div class="col-12 col-lg-7 left text-white d-flex me-4">
+              <div
+                class="leftmain py-5 mt-5 d-flex justify-content-center flex-column"
+              >
+                <h4 class="px-5 fw-bold fs-2">items on SALE</h4>
+                <p class="px-5 fw-lgiht fs-5">Discounts up to 30%</p>
+                <a
+                  class="px-5 text-decoration-none text-white mt-2 fw-bold"
+                  href="#"
+                  >SHOP NOW</a
+                >
+              </div>
+            </div>
+
+            <div class="col right text-white px-0">
+              <div class="row g-3 right">
+                <div class="col-12 rightop">
+                  <div class="mainl py-5">
+                    <h4 class="px-5 fw-bold fs-2">Combo Offers</h4>
+                    <p class="px-5 fw-lgiht fs-5">Discounts up to 50%</p>
+                    <a
+                      class="px-5 text-decoration-none text-white mt-2"
+                      href="#"
+                      >SHOP NOW</a
+                    >
+                  </div>
+                </div>
+                <div class="col rightbottom">
+                  <div class="mainr py-5">
+                    <h4 class="px-5 fw-bold fs-2">Discount Coupons</h4>
+                    <p class="px-5 fw-lgiht fs-5">Discounts up to 40%</p>
+                    <a
+                      class="px-5 text-decoration-none text-white mt-2"
+                      href="#"
+                      >SHOP NOW</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid overflow-hidden">
+        <div class="row mb-5 mt-5">
+          <div class="col d-flex justify-content-between">
+            <h2>Featured Product</h2>
+
+            <div class="page2button d-flex align-items-center">
+              <button
+                type="button"
+                id="buttonpage2"
+                class="btn btn-primary me-3 ms-2"
+                style="background-color: rgb(90, 175, 19)"
+              >
+                View all
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-secondary me-2"
+                class="carousel-control-prev"
+                data-bs-target="#carouselExample2"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-secondary"
+                class="carousel-control-prev"
+                data-bs-target="#carouselExample2"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="carouselExample2" class="carousel slide">
+          <div class="carousel-inner d-flex mb-4">
+            <div class="carousel-item active">
+              <div class="row mx-auto justify-content-between">
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-10.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Greek Style Plain Yogurt
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-11.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Pure Squeezed No Pulp Orange Juice
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-12.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Fresh Oranges</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-13.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Gourmet Dark Chocolate Bars
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-14.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Fresh Green Celery</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row mx-auto justify-content-between">
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-15.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Sandwich Bread</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-16.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Honeycrisp Apples</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-17.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-18.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Honeycrisp Apples</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-5.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row mx-auto justify-content-between">
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-1.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-2.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-3.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-4.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-5.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid mt-5">
+          <div class="row bg-warning mainrow1">
+            <div class="col-12 col-lg-6 text-white d-flex">
+              <div class="lefttext mx-auto py-3">
+                <h3 class="display-3 fw-semibold">Get 25% Discount on</h3>
+                <h3 class="display-3 fw-semibold">Your first purchase</h3>
+                <p class="fs-4">
+                  Just sign Up & Register it now to become member.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 d-flex text-white px-0 align-items-center">
+              <form class="d-flex flex-column w-100 mb-lg-0 mb-4">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control rounded-0"
+                    id="exampleInputPassword1"
+                    placeholder="Email Address"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-dark fw-semibold rounded-0"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid overflow-hidden mt-5">
+        <div class="row mb-5 mt-5">
+          <div class="col d-flex justify-content-between">
+            <h2>Most popular products</h2>
+
+            <div class="page2button d-flex align-items-center">
+              <button
+                type="button"
+                id="buttonpage2"
+                class="btn btn-primary me-3 ms-2"
+                style="background-color: rgb(90, 175, 19)"
+              >
+                View all
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-secondary me-2"
+                class="carousel-control-prev"
+                data-bs-target="#carouselExample3"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-secondary"
+                class="carousel-control-prev"
+                data-bs-target="#carouselExample3"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="carouselExample3" class="carousel slide">
+          <div class="carousel-inner d-flex mb-4">
+            <div class="carousel-item active">
+              <div class="row mx-auto justify-content-between">
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-15.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Sandwich Bread</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-17.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-19.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Sun Star Fresh Melon Juice
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-12.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Gourmet Dark Chocolate Bars
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-18.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Honeycrisp Apple</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row mx-auto justify-content-between">
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-10.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Greek Style Plain Yogurt
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-20.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Apples Juice</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-17.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-18.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Honeycrisp Apples</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-5.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row mx-auto justify-content-between">
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-1.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-2.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-3.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-4.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-5.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid overflow-hidden mt-5">
+        <div class="row mb-5 mt-5">
+          <div class="col d-flex justify-content-between">
+            <h2>Just Arrived</h2>
+
+            <div class="page2button d-flex align-items-center">
+              <button
+                type="button"
+                id="buttonpage2"
+                class="btn btn-primary me-3 ms-2"
+                style="background-color: rgb(90, 175, 19)"
+              >
+                View all
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-secondary me-2"
+                class="carousel-control-prev"
+                data-bs-target="#carouselExample4"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-secondary"
+                class="carousel-control-prev"
+                data-bs-target="#carouselExample4"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="carouselExample4" class="carousel slide">
+          <div class="carousel-inner d-flex mb-4">
+            <div class="carousel-item active">
+              <div class="row mx-auto justify-content-between">
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-20.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Apple Juice</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-19.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Sun Star Fresh Melon Juice
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-21.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Sun Sachet</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-23.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Auro Protein</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-22.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Gourmet Dark Chocolate</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row mx-auto justify-content-between">
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-10.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Greek Style Plain Yogurt
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-20.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Apples Juice</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-17.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-18.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">Honeycrisp Apples</h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-5.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row mx-auto justify-content-between">
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-1.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-2.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-3.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-4.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="productbackground"
+                  class="col text-center d-flex display-none flex-column justify-content-center py-3 col-lg-2 mx-1"
+                >
+                  <div class="img">
+                    <img src="images/product-thumb-5.png" alt="" />
+                  </div>
+                  <h3 class="fs-5 fw-semibold mt-3">
+                    Whole Wheat Sandwich Bread
+                  </h3>
+                  <div
+                    class="logo d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                    <span class="fs-5 fw-light pb-1">(222)</span>
+                  </div>
+                  <div
+                    class="rupees d-flex align-items-center justify-content-center"
+                  >
+                    <span
+                      class="text-decoration-line-through text-decoration-line-through text-"
+                    >
+                      $24.00</span
+                    >
+                    <span class="fw-bold mx-2">$18.00</span>
+                    <div class="border text-muted">10% OFF</div>
+                  </div>
+                  <div id="productcart" class="row mx-auto mt-3 invisible">
+                    <div class="col">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control text-center"
+                          value="0"
+                          min="0"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="cart col-6 bg-success rounded-2 d-flex align-items-center justify-content-center me-2"
+                    >
+                      <i class="bi bi-cart3"></i> <span>Add to cart</span>
+                    </div>
+                    <div
+                      class="heart col-2 d-flex rounded-2 justify-content-center align-items-center bg-white"
+                    >
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <h2>Our Recent Blog</h2>
+
+            <button
+              type="button"
+              id="buttonpage2"
+              class="btn btn-primary"
+              style="background-color: rgb(90, 175, 19)"
+            >
+              View all
+            </button>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card p-3">
+                <img src="images/post-thumbnail-1.jpg" alt="" />
+
+                <div class="card-body">
+                  <div class="text-secondary d-flex">
+                    <div class="d-flex me-3">
+                      <i class="bi bi-calendar-event me-2"></i>
+                      <p>22 AUG 2021</p>
+                    </div>
+
+                    <div class="d-flex">
+                      <i class="bi bi-folder me-2"></i>
+                      <p>Tips And Tricks</p>
+                    </div>
+                  </div>
+                  <h5 class="card-title fs-2 fw-bold">
+                    Top 10 casual look ideas to dress up your kids
+                  </h5>
+                  <p class="card-text fs-5 fw-lgiht text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis provident quo fugiat odit quia, adipisci hic
+                    praesentium excepturi eius!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card p-3">
+                <img src="images/post-thumbnail-2.jpg" alt="" />
+
+                <div class="card-body">
+                  <div class="text-secondary d-flex">
+                    <div class="d-flex me-3">
+                      <i class="bi bi-calendar-event me-2"></i>
+                      <p>22 AUG 2021</p>
+                    </div>
+
+                    <div class="d-flex">
+                      <i class="bi bi-folder me-2"></i>
+                      <p>Tips And Tricks</p>
+                    </div>
+                  </div>
+                  <h5 class="card-title fs-2 fw-bold">
+                    Latest trends of wearing street wears supremely
+                  </h5>
+                  <p class="card-text fs-5 fw-lgiht text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis provident quo fugiat odit quia, adipisci hic
+                    praesentium excepturi eius!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card p-3 mb-5">
+                <img src="images/post-thumbnail-3.jpg" alt="" />
+
+                <div class="card-body">
+                  <div class="text-secondary d-flex">
+                    <div class="d-flex me-3">
+                      <i class="bi bi-calendar-event me-2"></i>
+                      <p>22 AUG 2021</p>
+                    </div>
+
+                    <div class="d-flex">
+                      <i class="bi bi-folder me-2"></i>
+                      <p>Tips And Tricks</p>
+                    </div>
+                  </div>
+                  <h5 class="card-title fs-2 fw-bold">
+                    10 Different Types of comfortable clothes ideas for women
+                  </h5>
+                  <p class="card-text fs-5 fw-lgiht text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis provident quo fugiat odit quia, adipisci hic
+                    praesentium excepturi eius!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row bg-warning rounded-5 mb-5">
+            <div
+              class="col d-flex justify-content-center flex-column align-items-center p-5 g-3 p-lg-0 g-lg-0"
+            >
+              <h3 class="fs-1">Download Organic App</h3>
+              <p class="fs-5">Online Orders made easy, fast and reliable</p>
+              <div class="">
+                <img src="images/img-app-store.png" alt="" />
+                <img src="images/img-google-play.png" alt="" />
+              </div>
+            </div>
+
+            <img class="col" src=" images/banner-onlineapp.png " alt="" />
+          </div>
+        </div>
+        <div class="container-fluid">
+          <h2>People are also looking for</h2>
+          <div class="mb-5">
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Blue diamon almonds</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Angie’s Boomchickapop Corn</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Salty kettle Corn</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Chobani Greek Yogurt</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Sweet Vanilla Yogurt</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Warrior Blend Organic</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Salty kettle Corn</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Chiken wi kettle
+            </a>
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Foster Farms Takeout Crispy wings</a
+            >
+
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Chao Cheese Creamy</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Chicken meatballs</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Foster Farms Takeout Crispy wings</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Warrior Blend Organic</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Angie’s Boomchickapop Corn</a
+            >
+
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Chao Cheese Creamy</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Chicken meatballs</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Blue diamon almonds</a
+            >
+            <a
+              href=""
+              class="btn bg-warning-subtle text-decoration-none text-dark px-2 py-1 rounded-3 mb-2 me-2"
+              >Angie’s Boomchickapop Corn</a
+            >
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-between mb-5">
+            <div class="col-12 col-md-6 col-lg-2 border rounded-3 p-2">
+              <i class="fs-2 bi bi-truck text-secondary"></i>
+              <h3 class="fw-semibold">Free Delivery</h3>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipi elit.
+              </p>
+              <p></p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2 border rounded-3 p-2">
+              <i class="fs-2 bi bi-lock text-secondary"></i>
+              <h3 class="fw-semibold">100% secure payment</h3>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipi elit.
+              </p>
+              <p></p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2 border rounded-3 p-2">
+              <i class="fs-2 bi bi-shield-check text-secondary"></i>
+              <h3 class="fw-semibold">Quality guarantee</h3>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipi elit.
+              </p>
+              <p></p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2 border rounded-3 p-2">
+              <i class="fs-2 bi bi-check-circle text-secondary"></i>
+              <h3 class="fw-semibold">Guaranteed savings</h3>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipi elit.
+              </p>
+              <p></p>
+            </div>
+            <div class="col-12 col-md-12 col-lg-2 border rounded-3 p-2">
+              <i class="fs-2 bi bi-gift text-secondary"></i>
+              <h3 class="fw-semibold">Daily offers</h3>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipi elit.
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-between">
+            <div class="col-8 col-md-5 col-lg-2">
+              <div class="card border-0">
+                <img src="images/logo.svg" alt="" />
+
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div
+                      class="d-flex align-items-center border p-2 text-secondary lastlogo"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border p-2 text-secondary lastlogo"
+                    >
+                      <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border p-2 text-secondary lastlogo"
+                    >
+                      <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border p-2 text-secondary lastlogo"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border p-2 text-secondary lastlogo"
+                    >
+                      <i class="fa-brands fa-amazon"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-2 mb-5">
+              <h3>Organic</h3>
+              <div class="d-flex flex-column">
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >About us</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Conditions</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Our Journals</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Careers</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Affiliate Programme</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Ultras Press</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-sm-5 col-md-6 col-lg-2 mb-5">
+              <h3>Quick Links</h3>
+              <div class="d-flex flex-column">
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Offers</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Discount Coupons</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Storess</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Track Order</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Shop</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Info</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2 mb-5">
+              <h3>Customer service</h3>
+              <div class="d-flex flex-column">
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >FAQ</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Contact</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Privacy Policy</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Returns & Refunds</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Cookie Guidelines</a
+                >
+                <a class="text-decoration-none text-secondary mb-1" href=""
+                  >Delivery Information</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h3>Subscribe Us</h3>
+              <p>
+                Subscribe to our newsletter to get updates about our grand
+                offers
+              </p>
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email Address"
+                  aria-label="Recipient’s username"
+                  aria-describedby="basic-addon2"
+                />
+                <span
+                  class="input-group-text bg-dark text-white"
+                  id="basic-addon2"
+                  >Subscribe</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="row footer text-secondary d-flex justify-content-between mt-5"
+          >
+            <p class="col-12 col-md-3">
+              &copy; 2024 Organic. All rights Reserved
+            </p>
+            <p class="col-12 col-md-8 d-flex justify-content-md-end">
+              HTML Template by
+              <span><a href="" class="text-dark">TemplatesJungle</a> </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

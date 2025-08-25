@@ -1,0 +1,68 @@
+<nav class="navbar bg-secondary navbar-dark">
+  <div class="container-fluid px-5 d-flex align-items-center">
+    
+    <!-- Brand + Toggler -->
+    <div class="d-flex align-items-center me-4">
+      <a href="#" class="navbar-brand">
+        <img src="images/logo.svg" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#navmenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Search -->
+    <div class="search d-flex bg-white rounded-4 p-2 me-auto align-items-center">
+      <div class="dropdown px-2">
+        <a
+          class="btn dropdown-toggle fw-light border-0"
+          style="width: 160px"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          All Categories
+        </a>
+        <ul class="dropdown-menu rounded-0">
+          <li><a class="dropdown-item" href="#">All Categories</a></li>
+          <li><a class="dropdown-item" href="#">Groceries</a></li>
+          <li><a class="dropdown-item" href="#">Drinks</a></li>
+          <li><a class="dropdown-item" href="#">Chocolates</a></li>
+        </ul>
+      </div>
+      <input
+        class="form-control px-3 border-0"
+        type="text"
+        placeholder="Search for more than 20,000 products"
+      />
+      <i class="bi bi-search fs-4 text-secondary"></i>
+    </div>
+
+    <!-- Menu -->
+    <div class="label d-flex align-items-center">
+      <a href="#" class="btn btn-lg pb-2 fw-bold fs-5">HOME</a>
+      <div class="dropdown ms-2">
+        <button
+          class="btn btn-secondary dropdown-toggle fw-bold fs-5"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          PAGES
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</nav>
