@@ -1,4 +1,4 @@
-#🌿 Organic Food Store Website
+🌿 Organic Food Store Website
 
 This project is a front-end only website template designed for an organic food store. It is built using HTML, CSS, and Bootstrap 5, with an emphasis on creating a modern, clean, and responsive user interface.
 
