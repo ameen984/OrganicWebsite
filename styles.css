@@ -45,21 +45,21 @@
 
 .mainr{
     /* background: url('../images/banner-ad-3.jpg'); */
-    background-image: url('images/banner-ad-3.jpg');
+    background-image: url(images/banner-ad-3.jpg);
 
     background-size: cover;
    
 }
 .mainl{
   /* background: url('../images/banner-ad-2.jpg'); */
-    background-image: url('images/banner-ad-2.jpg');
+    background-image: url(images/banner-ad-2.jpg);
 
     background-size: cover;
 }
 
 .mainrow1{
 /* background: url('../images/banner-newsletter.jpg'); */
-    background-image: url('images/banner-newsletter.jpg');
+    background-image: url(images/banner-newsletter.jpg);
 
     background-size: cover;
 }
